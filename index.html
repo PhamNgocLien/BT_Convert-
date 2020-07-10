@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="amount" value="1"/>
+        </td>
+        <td>
+            <select id="select1">
+                <option selected value="215.3000">VietNam</option>
+                <option value="0.009248">USD</option>
+                <option value="1">JPY</option>
+            </select>
+        </td>
+        <td>
+            <select id="select2">
+                <option value="215.3000">VietNam</option>
+                <option selected value="0.009248">USD</option>
+                <option value="1">JPY</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" id="convert" onclick="convert()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" id="result">
+            <p>Result:</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script src="javascript.js"></script>
+</body>
+</html>
